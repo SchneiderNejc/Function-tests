@@ -11,4 +11,8 @@ contract Greetings{
   function getMessage() public view returns(string){
     return message;
   }
+
+  function addNumber(uint _value) public view returns(uint, string){
+    return (_value, message);
+  }
 }
