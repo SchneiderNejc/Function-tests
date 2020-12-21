@@ -12,7 +12,8 @@ contract Greetings{
     return message;
   }
 
-  function addNumber(uint _value) public view returns(uint, string){
+  function addNumber(uint _value) public returns(uint, string){
+    message = "aaaand its gone";
     return (_value, message);
   }
 }
